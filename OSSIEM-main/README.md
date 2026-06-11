@@ -87,14 +87,5 @@ docker exec -it velociraptor /bin/bash
 docker logs "$(docker ps --filter ancestor=ghcr.io/socfortress/copilot-backend:latest --format "{{.ID}}")" 2>&1 | grep "Admin user password"
 ```
 
-## Post-Deployment
 
-After you've reached this point you can take a short break to pat yourself in the back, it's all downhill from here on out.
 
-You'll need to make sure to create any necessary users in each of the tools for the integrations to work correctly. After that has been completed, you can log into CoPilot and start 
-provisioning customers.
-
-## Credits
-
-Huge shoutout to <a href="https://github.com/socfortress">SOCFortress</a> and <a href="https://www.youtube.com/@taylorwalton_socfortress/featured">Taylor Walton</a> for their hard work and 
-contributions to the open source community. And of course all credits to the <a href="https://github.com/wazuh">Wazuh Team</a> for their amazing product.
